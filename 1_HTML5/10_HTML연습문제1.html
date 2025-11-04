@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10_HTML연습문제1.html</title>
+</head>
+<body>
+  고객명 : <input name="cusName"> <br><br>
+  전화번호 : <input type="tel" name="tell"> <br><br>
+  E-mail : <input type="email" name="email"> <br><br>
+  피자선택 : <select name="kindOfPizza">
+    <option>슈퍼슈프림</option>
+    <option>콤비네이션</option>
+    <option>불고기</option>
+    <option>슈림프</option>
+    <option>치즈</option>
+  </select>
+
+  <fieldset name="pizzaSize">
+    <legend>피자 사이즈</legend>
+      <input type="radio"> Small <br>
+      <input type="radio"> Medium <br>
+      <input type="radio"> Large <br>
+  </fieldset>
+  
+  <fieldset name="toppint">
+    <legend>토핑 선택</legend>
+      <input type="checkbox"> 베이컨 <br>
+      <input type="checkbox"> 치즈 <br>
+      <input type="checkbox"> 양파 <br>
+      <input type="checkbox"> 버섯 <br>
+  </fieldset><br>
+
+  배송시간 : <input type="time" name="delTime"> <br><br>
+
+  배송시 요청사항 : <textarea name="req"></textarea><br><br>
+
+  <button>주문하기</button>
+</body>
+</html>

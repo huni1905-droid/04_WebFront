@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11_HTML연습문제2.html</title>
+</head>
+<body>
+  <fieldset>
+    <legend>납품자 정보</legend>
+      <ol>
+        <li>납품자명 : <input name="supName"></li> <br>
+        <li>emial : <input type="email" name="supEmail"></li> <br>
+        <li>홈페이지 : <input type="url" value="http://" name="supsite"></li> <br>
+        <li>지역 : 
+          <select name="region">
+            <option>서울</option>
+            <option>경기</option>
+            <option>인천</option>
+            <option>강원</option>
+            <option>충남</option>
+            <option>충북</option>
+            <option>대전</option>
+            <option>광주</option>
+            <option>전남</option>
+            <option>전북</option>
+            <option selected>부산</option>
+            <option>대구</option>
+            <option>경남</option>
+            <option>경북</option>
+            <option>울산</option>
+            <option>제주</option>
+          </select>
+        </li>
+      </ol>
+  </fieldset>
+
+  <fieldset name="supInfo">
+    <legend>납품 정보</legend>
+      <ul>
+        <li>상품명 : <input></li> <br>
+        <li>납품수량 : <input placeholder="최소 100" min="100"></li><br>
+        <li>납품등급 : <input type="range"></li><br>
+        <li>기타사항 : <textarea></textarea></li>
+      </ul>
+  </fieldset><br>
+
+ <button>send message</button>
+
+</body>
+</html>

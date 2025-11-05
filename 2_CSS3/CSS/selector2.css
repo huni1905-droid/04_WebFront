@@ -1,0 +1,118 @@
+/*
+CSS 파일
+파일 전체가 <style> 태그 내부라고 생각하기
+
+*/
+
+
+/* 기본 속성 선택자 */
+div[name="name-1"]{ /*name 속성값이 name-1인 div 태그의 배경색 변경*/
+  background-color: red;
+}
+
+p[test="test"]{
+  color: orange;
+}
+
+[name="name-2"]{
+  background-color: green;
+}
+
+/* 자식 선택자 */
+
+#parent-ul > li{
+  background-color: orange;
+}
+
+#parent-ul > span {
+  background-color: red;
+} /* span 태그는 자식이 아니라 후손이라서 바로는 안되*/
+
+#parent-ul > li > span {
+  background-color: red;
+} /*이렇게 거쳐서 선택은 가능*/
+
+/* 후손 선택자 */
+#parent-ul span{ /* 띄어쓰기가 후손 선택자 나타내는 표기 -> 이건 가능*/
+  color: white;
+}
+
+#test-div p{
+  background-color: aqua;
+}
+
+/* 반응 선택자 */
+.div-cls {
+ border: 1px solid black;
+ width: 200px;
+ height: 200px;
+ background-color: gray;
+
+ margin-bottom: 30px;
+ /*margin-bottom: 30px; 
+ 아래쪽 요소와으 간격 == 아래쪽 여백을 30px 지정*/
+
+ /* 요소에 마우스커서가 올라가면 손가락 모양으로 변경 */
+ cursor:pointer;
+}
+
+#active-test:active{
+  background-color: yellow;
+}
+
+#hover-test:hover{
+  background-color: pink;
+  width:230px;
+}
+
+
+/*
+id가 hover-test인 요소가 스타일의 변화를 일으키면 0.5초 동안 변해라
+
+트랜지션(transition) :
+HTML 요소가 한 상태에서 다른 상태로 변할떄의 
+변화를 부드럽게 만들어주는 애니메이션 효과
+점진적으로 몇초에 걸쳐 변화해라...
+*/
+#hover-test {
+  transition-duration: 0.5s;
+}
+
+/* 상태 선택자 */
+#focus-test:focus{
+  background-color: red;
+}
+
+input[name="fruits"]:checked{
+  width: 30px;
+  height: 30px;
+
+  /* radio, checkbox는
+  크기를 제외한 스타일 적용되지 않는다.
+  (ex) 색상 변경 등 안 된다)
+  */
+  background-color: red;
+}
+
+#test-div2 > input:enabled{ 
+  /*id가 test-div2 중 자식 클레스 input의 상태가 enabled인 애 선택 하겠다*/
+  
+  background-color: lightgreen;
+}
+
+#test-div2 > input:disabled{
+  background-color: lightcoral;
+}
+
+/* 동위 선택자 */
+#div1 + div {
+  background-color: olive;
+}
+
+
+#div3 ~ div{
+  background-color: blue;
+}
+
+
+

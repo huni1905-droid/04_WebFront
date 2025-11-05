@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>11_HTML연습문제2.html</title>
 </head>
-<body>
-  <fieldset>
-    <legend>납품자 정보</legend>
+<form>
+
+  <body>
+    <fieldset>
+      <legend>납품자 정보</legend>
       <ol>
         <li>납품자명 : <input name="supName"></li> <br>
         <li>emial : <input type="email" name="supEmail"></li> <br>
         <li>홈페이지 : <input type="url" value="http://" name="supsite"></li> <br>
-        <li>지역 : 
+        <li>지역 :
           <select name="region">
             <option>서울</option>
             <option>경기</option>
@@ -33,19 +36,20 @@
           </select>
         </li>
       </ol>
-  </fieldset>
+    </fieldset>
 
-  <fieldset name="supInfo">
-    <legend>납품 정보</legend>
+    <fieldset name="supInfo">
+      <legend>납품 정보</legend>
       <ul>
         <li>상품명 : <input></li> <br>
         <li>납품수량 : <input placeholder="최소 100" min="100"></li><br>
         <li>납품등급 : <input type="range"></li><br>
         <li>기타사항 : <textarea></textarea></li>
       </ul>
-  </fieldset><br>
+    </fieldset><br>
 
- <button>send message</button>
-
+    <button>send message</button>
+</form>
 </body>
+
 </html>

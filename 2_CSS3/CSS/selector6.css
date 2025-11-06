@@ -1,0 +1,59 @@
+/* 3순위 : 아이디 선택자*/
+#test1 {
+  height: 100px;
+  background-color: black;
+  color: white;
+} /*위쪽에 작성되어도 '클래스 선택자'보다 
+  '아이디 선택자가'우선순위 높아서 덮어씌워졌다*/
+
+/* 4순위 : 클래스 선택자 */
+.cls1{
+  background-color: green;
+} /*위쪽에 작성되어도 '태그 선택자'보다 
+  '클래스 선택자가'우선순위 높아서 덮어씌워졌다*/
+
+/* 동일한 우선순위에서는 
+  아래쪽에 작성된 설정값이 우선적용됨*/
+.cls1{
+  background-color: yellow;
+} 
+
+
+/* 5순위 : 태그 선택자 */
+div {
+  width: 200px;
+  height: 200px;
+  background-color: red !important;
+} /* 1순위 : important */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

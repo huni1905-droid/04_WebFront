@@ -1,0 +1,113 @@
+.area1{ background-color: red;}
+.area2{ background-color: orange;}
+.area3{ background-color: yellow;}
+.area4{ background-color: green;}
+.area5{ background-color: blue;}
+
+.inline{
+  display: inline;
+}
+
+.block{
+  display: block;
+
+  width: 150px;
+  height: 150px;
+}
+
+
+.inline-block{
+  display: inline-block;
+} /*inline의 가로정렬 형식과 block의 크기조정 형식 모두 갖고 있다*/
+
+
+
+/* ---------------
+감싸는 영역 요소 */
+#container-1{
+  border: 3px solid black;
+  width: 323px;
+  height: 472px;
+} /*부모에게 고정적인 크기 정해주는 것이 좋다*/
+
+/* 내부에 영역을 분할할 요소 */
+#container-1 > div{
+  border: 1px dashed hotpink;
+  height: 50%; 
+} /* 내부에 들어가진 요소들은 부모의 50%등 가변으로 주면 좋다 */ 
+#container-1 > div:first-of-type{
+  height: 30%;
+  background-color: red;
+}
+  
+#container-1 > div:last-of-type{
+  height: 70%;
+  background-color: blue;
+}
+ 
+/*---------------*/
+#container-2{
+  border: 3px solid black;
+  height: 400px;
+  width: 300px;
+}
+      
+/* block 형식의 요소는 별도의 width가 지정되지 않으면
+항상 부모요소의 100% */
+#container-2 > .div-2:nth-of-type(1){
+  height: 20%;
+  background-color: aqua;
+}
+
+#container-2 > .div-2:nth-of-type(2){
+  height: 30%;
+  background-color: bisque;
+}
+
+#container-2 > .div-2:nth-of-type(3){
+  height: 50%;
+  background-color: blueviolet;
+}
+
+/*---------------*/
+#container-3 {
+  border: 5px solid red;
+  width: 400px;
+  height: 200px;
+}
+
+.div-3{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+}
+
+#container-3 > .div-3:first-of-type{
+  background-color: pink;
+}
+
+#container-3 > .div-3:last-of-type{
+  background-color: steelblue;
+}
+
+
+/*---------------*/
+.div-4 {
+  border: 3px solid black;
+  height: 100px;
+}
+
+#test4{
+  background-color: deeppink;
+
+  /*display: none; 
+  /*화면상에 처음부터 없었던것 처럼 공간마저 사라져 
+    but HTML 상에 존재는 한다*/
+
+  visibility: hidden; 
+  /* 자리는 차지하고 있으나 보이지 않게 사리진다*/
+}
+
+
+
+

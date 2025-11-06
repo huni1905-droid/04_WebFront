@@ -1,0 +1,96 @@
+div {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  border: 2px dashed red;
+  position: relative; /* 배치될때 기준 세워주는 것 / 상대적 기준으로*/
+}
+
+.first {
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+}
+
+.second {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+
+  position: absolute; /* (원래 위치 무시하고) 절대적으로 위치를 정해줄때*/
+
+  top: 50px; /* 부모님(빨간 점선) 기준으로 위에서부터 50px 떨어져라 */
+  left: 50px; /* 부모님(빨간 점선) 기준으로 왼쪽에서부터 50px 떨어져라 */
+}
+
+.third {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: absolute;
+
+  top: 100px; /* 부모님(빨간 점선) 기준 */
+  left: 100px;
+}
+
+/*------------------*/
+.container-2 {
+  width: 300px;
+  height: 300px;
+
+  position: relative;
+}
+
+
+#center {
+  width: 50px;
+  height: 50px;
+  background-color: pink;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto; /* 부모의 크기가 달라져도 정가운데 있게 됬다 */
+}
+
+/*------------------*/
+.fixed-area{
+  width: 120px;
+  background-color: yellow;
+  color: white;
+
+  position: fixed;
+
+  bottom: 50px; /* 기준위치 안 정해줬을때는 브라우저 기준 */
+  right: 50px;
+}
+
+.fixed-area > a{
+  text-decoration: none; 
+  color: black;
+}/* a태그가 갖는 밑줄과 글씨 파랑색/보라색 띄는것 없애주기
+  => 부모님 태그에서 설정 안됨 -> a태그에 접근해서 직접 바꿔줘야 한다*/
+
+.fixed-area > a:visited{
+  color: red;
+} /* 방문한적 있을떄 글자색 보라색 없애주는것*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

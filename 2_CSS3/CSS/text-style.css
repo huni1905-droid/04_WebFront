@@ -1,0 +1,171 @@
+/* color 속성 */
+#color-ul > li {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#color-ul > li:nth-child(1) {
+  color: red;
+}
+
+#color-ul > li:nth-child(2) {
+  color: #3a3de4;
+}
+/* 구글 -> 컬러피커 검색 해서 보면 RGB 값등  알 수 있다
+000000(검정) ~ 
+*/
+
+#color-ul > li:nth-child(3) {
+  color:rgb(50, 100, 150)
+}
+
+
+#color-ul > li:nth-child(4) {
+  color: rgba(50, 100, 150, 0.3);
+}
+
+#color-ul > li:nth-child(5) {
+  color: hsl(360, 100%, 50%)
+}
+/*      색상 체도 명도
+        숫자  %   %
+*/
+
+#color-ul > li:nth-child(5) {
+  color: hsla(360, 100%, 50%, 0.5)
+}
+
+
+/*--------------------
+text_decoration*/
+/* 아랫줄 긋기*/
+#deco-ul > li:nth-child(1) {
+  text-decoration: underline;
+}
+
+/* 중간줄 긋기*/
+#deco-ul > li:nth-child(2) {
+  text-decoration: line-through;
+}
+
+/* 윗줄 긋기*/
+#deco-ul > li:nth-child(3) {
+  text-decoration: overline;
+}
+
+/* 줄 없애기
+a태그까지 접근야 한다*/
+#deco-ul > li:nth-child(4) > a {
+  text-decoration: none;
+}
+
+
+/*---------------
+text-align : 글자를 가로 정렬*/
+#align-test {
+  width: 550px;
+  border: 2px solid black;
+}
+
+#align-test > p:nth-child(1) {
+  text-align: left; /* 기본값*/
+}
+
+#align-test > p:nth-child(2) {
+  text-align: right; 
+}
+
+#align-test > p:nth-child(3) {
+  text-align: center; 
+}
+
+/*양쪽에 붙은 채로 출력*/
+#align-test > p:nth-child(4) {
+  text-align: justify;
+}
+
+
+/* -----------------------
+line-height */
+#line-test > p:last-child {
+  line-height: 30px;
+}
+
+#center-test {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+
+  text-align: center;
+
+  /*
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  */
+}
+/* span태그는 inline 형식이기 때문에 직접  text-align 주지 못한다
+ -> 그래서 span태그를 감싸는 부모에게  text-align 주면 된다*/
+
+
+#center-test > span {
+  line-height: 200px;
+}
+
+
+
+/* --------------------------
+letter-spacing : 자간을 지정해주는 속성 */
+#letter-test {
+  letter-spacing: 10px;
+}
+
+
+/* -------------------------
+text-shadow : */
+#shadow-test {
+  background-color: black;
+  padding: 30px;
+}
+
+#shadow-test > p {
+  font-size: 75px;
+  font-weight: bold;
+}
+
+#shadow-test > p:nth-child(1) {
+  color: orange;
+  text-shadow: 3px 3px white;
+}
+/* 텍스트를 기준으로 
+오른쪽으로 3px 아래쪽으로 3px 이동한 위치에서
+흰색으로 그림자 표현
+*/
+
+#shadow-test > p:nth-child(2) {
+  color: white;
+  text-shadow: 5px 5px 5px #bbb;
+}
+/* 
+오른쪽으로 5px, 아래쪽으로 5px 이동하여
+5px 정도로 흐리게 퍼져라
+#bbb 가 색상*/
+
+
+#shadow-test > p:nth-child(3) {
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0px 0px 10px magenta;
+}
+
+
+
+#shadow-test > p:nth-child(4) {
+  text-shadow: 0px 0px 4px #ccc,
+              0px -5px 4px #ff3,
+              2px -10px 6px #fd3,
+              -2px -15px 11px #f80,
+              2px -20px 18px #f20;
+
+ML5
+
+HTML5

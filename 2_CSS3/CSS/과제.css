@@ -1,0 +1,201 @@
+* {
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0;
+}
+
+main{
+  width: 1140px;
+  margin: auto;
+}
+
+nav{
+  height: 200px;
+  display: flex;
+  
+  padding-top: 16px;
+  padding-bottom: 16px;
+  position:sticky;
+}
+
+nav > section:nth-of-type(1){
+  flex-basis: 10%;
+}
+
+#home-logo ,#appDownload-logo{
+  width: 100px;
+  margin: 20px;
+}
+
+nav > section:nth-of-type(2)
+nav > section:nth-of-type(4){
+  flex-basis: 15%;
+}  
+
+nav > section:nth-of-type(3){
+  justify-content: center;
+  align-items: center;
+  flex-basis: 50%;
+  display: flex;
+
+}  
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  
+}
+
+nav li{
+  flex-basis: 150px;
+
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+}
+
+nav > section:nth-of-type(5){
+  align-items: center;
+  flex-basis: 10%;
+}
+
+
+
+/*----------------검색부위-1--------------------*/
+
+header {
+  display: flex;
+
+}
+
+header > section:first-child{
+  flex-basis: 10%;
+  height: 40px;
+  background-color: #e6e8eb;
+
+  color: black;
+  border-radius: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/*----------------검색부위-2(검색바 부위)--------------------*/
+header > section:last-child{
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset{
+  display: flex;
+}
+
+#search-area {
+  flex-basis: 100%;
+  border: 1px solid #868b94
+  borderr
+}
+
+#query{
+  font-size: 18px;
+
+}
+
+#popSearch{
+  justify-content: space-around;
+}
+
+
+/*----------------Content-1*--------------------*/
+
+.content{
+  display: flex;
+  flex-direction: column;
+}
+
+#content-1 > p:last-of-type {
+  flex-basis: 45%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+/*----------------Content-2* 필터 부위--------------------*/
+#content-2 > section:first-of-type{
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+}
+
+#content-2 > section:nth-of-type(2){
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+/*----------------Content-2* 상품 부위--------------------*/
+
+
+/*----------------Content-3*--------------------*/
+#content-2 > section:last-of-type{
+  flex-basis : 80%;
+}
+
+/*----------------Content-1*--------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------footer*--------------------*/
+
+
+
+footer{
+  height: 200px;
+  display: flex;
+}
+
+.footer-1{
+  display: flex;
+}
+
+.footer-1 > section:first-of-type{
+  justify-content: left;
+}
+
+.footer-1 > section:last-of-type{
+  justify-content: right;
+}

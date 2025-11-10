@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,9 @@
    해드 태그 안쪽에 넣어야 처음부터 퐅트어썸 연결 할 수 있다-->
   <script src="https://kit.fontawesome.com/0968aeef36.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-  
+
   <!--
     시맨틱(Semantic, 의미) 태그
     - 태그 이름 자체가 해당 요소의 의미와 역할을 명확히 나타내는 태그
@@ -39,79 +41,126 @@
     aside 태그 : 사이드바(보통 양쪽), 광고 영역
 -->
 
-<main>
-  <header>
-    <section> <!-- 클릭 시 메인페이지로 이동하는 로고 -->
-      <a href="#">
-        <img src="/images/images/logo.jpg" id="home-logo">
-      </a>
-    </section>
-    <section> <!-- 검색창 부분 -->
-      <section class="search-area">
-        <!-- form 내부 input 태그값을 서버로 제출/전달 -->
-        <form action="#" name="search-form">
-          <fieldset> 
-            <!-- fieldset : form 내부에서 input을 
+  <main>
+    <header>
+      <section> <!-- 클릭 시 메인페이지로 이동하는 로고 -->
+        <a href="#">
+          <img src="/images/images/logo.jpg" id="home-logo">
+        </a>
+      </section>
+
+      <section> <!-- 검색창 부분 -->
+        <section class="search-area">
+          <!-- form 내부 input 태그값을 서버로 제출/전달 -->
+          <form action="#" name="search-form">
+            <fieldset>
+              <!-- fieldset : form 내부에서 input을 
             종류별로 묶는 용도로 자주 사용-->
-            <!-- autocomplete : HTML 기본 자동완성 사용X-->
-            <input type="search" id="query" name="query"
-            placeholder="검색어를 입력해주세요."
-            autocomplete="off"
-            >
-            <!-- 폰트 : 구글 -> fontawesome 검색 사이트에서 찾고 
+              <!-- autocomplete : HTML 기본 자동완성 사용X-->
+              <input type="search" id="query" name="query" placeholder="검색어를 입력해주세요." autocomplete="off">
+              <!-- 폰트 : 구글 -> fontawesome 검색 사이트에서 찾고 
              head태그에 script 넣고 폰트 태그 갖고와 붙이기-->
-            <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+              <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+            </fieldset>
+          </form>
+        </section>
+      </section>
+
+      <section></section> <!-- 빈 부분 -->
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">자유계시판</a></li>
+        <li><a href="#">질문계시판</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">1:1문의</a></li>
+      </ul>
+    </nav>
+
+    <section class-="content">
+      <!-- 메인 콘텐트(기사) 작성 영역 -->
+      <section class="content-1">
+        <div class="content-item">
+          <div>
+            <img src="/images/images/flowers/flower1.jpg">
+          </div>
+          <h1>
+            <a href="#">[속보] 오늘 금요일</a>
+          </h1>
+          <p>
+            Kenan Foundation Asia believes in a world where everyone has the right to build a better life for
+            themselves, their family, and their community. Every day, we are working in Thailand and the region to
+            inspire students, develop skilled people, and grow strong leaders by empowering them with the knowledge,
+            technology, and skills necessary for a better future. Whether it’s an entrepreneur, a small business owner,
+            a teacher, a student, a community leader, or a non-profit manager, we conduct tailored, engaging activities
+            to train, coach and equip them so they can achieve their dreams.
+          </p>
+        </div>
+
+        <div class="content-item">
+          <div>
+            <img src="/images/images/flowers/flower2.jpg">
+          </div>
+          <h1>
+            <a href="#">[속보] 오늘 금요일</a>
+          </h1>
+          <p>
+            Kenan Foundation Asia believes in a world where everyone has the right to build a better life for
+            themselves, their family, and their community. Every day, we are working in Thailand and the region to
+            inspire students, develop skilled people, and grow strong leaders by empowering them with the knowledge,
+            technology, and skills necessary for a better future. Whether it’s an entrepreneur, a small business owner,
+            a teacher, a student, a community leader, or a non-profit manager, we conduct tailored, engaging activities
+            to train, coach and equip them so they can achieve their dreams.
+          </p>
+        </div>
+      </section>
+      <!-- 여기까지는 깃허브 확인 ----------------------------------------------------->
+      <!-- 아이디/비밀번호 로그인 역역 -->
+      <section class="content-2">
+        <form action="#" name="login-form">
+          <fieldset id="id-pw-area"> <!-- 반투명 박스 만들어 주는 태그-->
+            <section>
+              <input type="text" name="inputId" placeholder="아이디">
+              <input type="password" name="inputPw" placeholder="비밀번호">
+            </section>
+            <section>
+              <button type="submit">로그인</button>
+            </section>
           </fieldset>
+
+          <label> <!-- 아이디 저장이란 글자 눌러도 체크될 수 있도록 하기 위해-->
+            <input type="checkbox" name="saveId">
+            <!-- checkbox/radio는 서버로 넘어갈때 on/off 형식으로 넘어간다-->
+            아이디 저장
+          </label>
         </form>
+
+        <!-- 회원가입 / ID/PW 찾기 영역-->
+        <section id="signup-find-area">
+          <a href="#">회원가입</a>
+          <span>|</span>
+          <a href="#">ID/PW 찾기</a>
+        </section>
       </section>
     </section>
-    <section></section> <!-- 빈 부분 -->
-  </header>
-  
-  <nav>
-    <ul>
-      <li><a href="#">공지사항</a></li>
-      <li><a href="#">자유계시판</a></li>
-      <li><a href="#">질문계시판</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="#">1:1문의</a></li>
-    </ul>
-  </nav>
-  
-  <section class-="content">
-    <!-- 메인 콘텐트(기사) 작성 영역 -->
-    <section class="content-1">
-      <div class="content-item">
-        <div>
-          <img src="/images/images/flowers/flower1.jpg">
-        </div>
-        <h1>
-          <a href="#">[속보] 오늘 금요일</a>
-        </h1>
-        <p>
-          Kenan Foundation Asia believes in a world where everyone has the right to build a better life for themselves, their family, and their community. Every day, we are working in Thailand and the region to inspire students, develop skilled people, and grow strong leaders by empowering them with the knowledge, technology, and skills necessary for a better future. Whether it’s an entrepreneur, a small business owner, a teacher, a student, a community leader, or a non-profit manager, we conduct tailored, engaging activities to train, coach and equip them so they can achieve their dreams.
-        </p>
-      </div>
+  </main>
 
-      <div class="content-item">
-        <div>
-          <img src="/images/images/flowers/flower2.jpg">
-        </div>
-        <h1>
-          <a href="#">[속보] 오늘 금요일</a>
-        </h1>
-        <p>
-          Kenan Foundation Asia believes in a world where everyone has the right to build a better life for themselves, their family, and their community. Every day, we are working in Thailand and the region to inspire students, develop skilled people, and grow strong leaders by empowering them with the knowledge, technology, and skills necessary for a better future. Whether it’s an entrepreneur, a small business owner, a teacher, a student, a community leader, or a non-profit manager, we conduct tailored, engaging activities to train, coach and equip them so they can achieve their dreams.
-        </p>
-      </div>
+  <footer>
+    <p>Copyright &copy KH Information Educational Institute E-Class;</p>
+    <!-- Copyright 로고 나타낼때-->
+
+    <section>
+      <a href="#">프로젝트 소개</a>
+      <span>|</span>
+      <a href="#">이용약관</a>
+      <span>|</span>
+      <a href="#">개인정보처리방침</a>
+      <span>|</span>
+      <a href="#">고객센터</a>
     </section>
-
-    <!-- 아이디/비밀번호 로그인 역역 -->
-    <section class="content-2"></section>
-  </section>
-</main>
-
-<footer></footer>
+  </footer>
 
 
 
@@ -123,4 +172,5 @@
 
 
 </body>
+
 </html>

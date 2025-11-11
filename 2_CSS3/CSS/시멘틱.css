@@ -8,7 +8,7 @@ body {
 
 main {
   width: 1140px;
-  margin: auto;
+  margin: auto; /* 좌우 가운데 정렬을 위해서 */
 }
 
 
@@ -112,7 +112,7 @@ nav a{
   font-size: 18px;
   font-weight: bold;
   color: black;
-  display: block;
+  display: block; /* 부모의 높이 만크 차지하게 하기 위해서*/
   height: 100%;
   text-align: center;
   line-height: 50px;
@@ -258,7 +258,7 @@ form[name="login-form"] > label {
   text-decoration: none;
 }
 
-#signup-ffind-area > span{
+#signup-find-area > span{
   padding: 0 10px;
 }
 

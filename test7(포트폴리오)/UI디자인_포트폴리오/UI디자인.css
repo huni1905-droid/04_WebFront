@@ -1,0 +1,193 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+}
+
+main{
+  width: 1140px;
+  margin: 20px;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+}
+/* ----------------- header ----------------*/
+header {
+  height: 200px;
+  display: flex;
+}
+
+
+
+header > section {
+  display: flex;
+  height: 200px;
+  
+}
+
+header > section > section:nth-of-type(1){
+  flex-basis: 20%;
+}
+
+header > section > section:nth-of-type(2){
+    flex-basis: 80%;
+    margin-top: 30px;
+    text-align: center;
+}
+/*header > section > section:nth-of-type(3){
+    flex-basis: 20%;
+}*/
+#passportPhotos > img{
+  height: 180px;
+  width: 140px;
+  margin: 30px;
+}
+
+header > section > section:last-of-type{
+
+}
+
+
+/* ----------------- nav ----------------*/
+nav {
+  height: 50px;
+  border-bottom: 2px solid black;
+  margin: 20px;
+}
+
+nav > ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+  justify-content: right;
+}
+
+nav li {
+  flex-basis: 150px;
+}
+
+nav a{
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  display: block;
+  height: 100%;
+  text-align: center;
+  line-height: 50px;
+
+  border-radius: 5px;
+  transition-duration: 0.2s;
+}
+
+nav a:hover{
+  background-color: rgb(112, 112, 223);
+  color: white;
+}
+/* ----------------- About Me ----------------*/
+#aboutMe {
+  display: flex;
+  height: 200px;
+}
+
+#aboutMe > h3{
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  background-color: rgb(112, 112, 223);
+  color: white;
+  line-height: 50px;
+}
+
+#aboutMe > section{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+
+
+/* ----------------- Education/Still ----------------*/
+#eduSkill {
+  height: : 400;
+  display: flex;
+}
+
+#eduSkill > h3{
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  background-color: rgb(112, 112, 223);
+  color: white;
+  line-height: 50px;
+}
+
+#eduSkill > table {
+  width: 300px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* ----------------- Project ----------------*/
+#project {
+  height: 300;
+  display: flex;
+
+}
+
+#project > h3{
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  background-color: rgb(112, 112, 223);
+  color: white;
+  line-height: 50px;
+}
+
+#github-btn{
+  display: flex;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#github-btn > a {
+width: 300px;
+}
+
+/* ----------------- Contect Me ----------------*/
+#contect{
+  height: 300;
+  display: flex;
+}
+
+#contect > h3{
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  display: block;
+  background-color: rgb(112, 112, 223);
+  color: white;
+  line-height: 50px;
+}
+
+#contect > div {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.input-area{
+  display: flex;
+  flex-direction: column;
+
+}

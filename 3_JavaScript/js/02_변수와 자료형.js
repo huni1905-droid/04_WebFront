@@ -31,7 +31,7 @@ console.log(number1 + number2);
 number1 = 300; // number1에 300 재대입
 number2 = 400; // number2에 400 재대입
 
-// 변경된 두 변수의 값 추력
+// 변경된 두 변수의 값 출력
 // 1) 문자열 + 문자열/숫자/변수 == 이어쓰기
 console.log("number1의 값 : " + number1); // "number1의 값 : 300"
 console.log("100" + 100); // "100100"

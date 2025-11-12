@@ -43,7 +43,7 @@
       <br>
 
       <!-- 버튼이 클릭되었을 때 internalFn 함수를 호출(실행)
-       HTML 내부에 스크립트를 작성해서 기능을 수행하는 방식 -->
+       HTML 내부에 스크립트(<script>)를 작성해서 기능을 수행하는 방식 -->
       <button type="button" onclick="internalFn()">Internal 방식 확인</button>
 
       <script>
@@ -57,13 +57,15 @@
           // 해당 함수가 어떤 기능을 해야하는지 정의
 
           // alert() : 경고, 알림창, 대화상자 호출하는 함수
-          alert("Internal 버튼이 클릭되었습니다.");        }
+          alert("Internal 버튼이 클릭되었습니다.");  
+        }
       </script>
     </li>
 
     <li>
       HTML 외부에 존재하는 .js 파일을 연결해서 사용하는 방식(External 방식)
       <button type="button" onclick="externalFn()">External 방식 확인</button>
+      <!-- <body> 태그 하단에 <script>태그로 JS와 연결해 줘야한다. -->
     </li>
     
     <li>

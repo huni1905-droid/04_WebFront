@@ -43,7 +43,6 @@ header > section > section:nth-of-type(2){
 }*/
 #passportPhotos > img{
   height: 180px;
-  width: 140px;
   margin: 30px;
 }
 
@@ -95,7 +94,7 @@ nav a:hover{
 /* ----------------- About Me ----------------*/
 #aboutMe {
   display: flex;
-  height: 200px;
+  height: 300px;
 }
 
 #aboutMe > h3{
@@ -114,11 +113,27 @@ nav a:hover{
   margin-top: 30px;
 }
 
+#aboutMe > section > pre {
+  font-size: 20px;
+  font-weight: bold;
+  flex-basis: 40%;
+}
+
+#aboutMe > section > dis{
+  flex-basis: 60%;
+}
+
+#aboutMe img{
+  width: 200px;
+  display: flex;
+  justify-content: right;
+  margin-left: 50px;
+}
 
 
 /* ----------------- Education/Still ----------------*/
 #eduSkill {
-  height: : 400;
+  height: : 600;
   display: flex;
 }
 
@@ -133,14 +148,15 @@ nav a:hover{
 }
 
 #eduSkill > table {
-  width: 300px;
+  width: 500px;
+  height: 20px;
   margin-left: 30px;
   margin-top: 30px;
 }
 
 /* ----------------- Project ----------------*/
 #project {
-  height: 300;
+  height: 400;
   display: flex;
 
 }
@@ -159,12 +175,27 @@ nav a:hover{
   display: flex;
   margin-left: 30px;
   margin-top: 30px;
+  width: 300px;
 }
 
 #github-btn > a {
-width: 300px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  list-style: none;
+  color: black;
+  font-weight: bold;
+  font-size: 15px;
+  text-align: center;
+
 }
 
+#github-btn p{
+  display: flex;
+  justify-content: centerss;
+  font-size: 20px;
+} 
 /* ----------------- Contect Me ----------------*/
 #contect{
   height: 300;
@@ -179,6 +210,7 @@ width: 300px;
   background-color: rgb(112, 112, 223);
   color: white;
   line-height: 50px;
+  
 }
 
 #contect > div {
@@ -186,8 +218,41 @@ width: 300px;
   margin-top: 30px;
 }
 
+#contect form{
+  display: flex;
+}
+
+#contect fieldset{
+  width: 500px;
+  height: 200px;
+}
+
 .input-area{
   display: flex;
   flex-direction: column;
-
 }
+
+.input-area > input {
+  height: 40px;
+}
+
+.input-area > button {
+  height: 40px;
+}
+
+
+@media all and (max-width:767px){
+  main {
+    width: 100vw;
+  }
+
+  nav{
+    width: 100%;
+    border-bottom: none;
+    height: auto;
+  }
+
+  nav > ul {
+    flex-direction: column;
+
+  }

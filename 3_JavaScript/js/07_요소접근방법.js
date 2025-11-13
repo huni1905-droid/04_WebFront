@@ -118,3 +118,69 @@ function cssTest(){
 
 
 
+// 카카오톡 모양의 채팅 화면 만들기-------------------------------------------
+function readValue(){
+  
+  // 채팅이 출력되는 배경 요소
+  const bg = document.querySelector("#chatting-bg");
+
+  // 채팅 내용 입력 input 요소
+  const input = document.querySelector("#user-input");
+
+  // input창에 입력된 값이 없을 경우
+  // 1) 진짜 아무것도 안 적은 경우
+  // 2) 공백만 적은 경우(ex. 스페이스바 등)
+
+  // 문자열.trim() : 문자열 좌우 공백 제거
+  if(input.value.trim().length == 0){
+    alert("채팅 내용을 입력해주세요");
+    input.value = ""; // 이전 input에 작성된 값 삭제
+    input.focus(); // input에 커서 활성화
+    return;// readValue 함수 종료
+  }
+
+  // HTML의 <div id="chatting-bg"> 자식으로 쌓기
+  bg.innerHTML += `<p><span>${input.value}</span></p>`;
+  // '=' 사용하면 기존에 있는것 갈아끼우는 것이 되기 때문에 += 연산자 사용!
+
+  // bg.scrollTop : 현재 스크롤 위치
+  // 스크롤이 현재 얼마만큼 내려와있는지 나타냄
+  // bg.scrollHeight : bg의 스크롤 전체 높이
+  // 스크롤바를 이용해 스크롤 할 수 있는 전체 높이
+  // console.log(bg.scrollTop);
+  // console.log(bg.scrollHeight);
+
+  bg.scrollTop = bg.scrollHeight
+
+  input.value = "";
+  input.focus();
+
+}
+
+
+// keydown : 키가 눌러졌을 때 ( 꾹 누르고 있으면 계속 인식이 됨)
+// keyup : 눌려지던 키가 떼어졌을 때 (올라왔을때)(1회만 인식)
+document.querySelector("#user-input")
+.addEventListener("keyup", function(e) {
+  // 매개변수 e : 이벤트 객체 (발생한 이벤트 정보를 담고있는 객체)
+  console.log(e);
+
+  // e['key'] -> 매핑된 value 값 넘어온다
+  // e.key -> 매핑된 value 값 넘어온다
+  if(e.key == "Enter"){// 엔터가 놀려지고 떼어졌을때
+    readValue();
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+

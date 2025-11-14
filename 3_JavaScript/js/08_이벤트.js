@@ -103,7 +103,7 @@ test2.addEventListener("click", function(){
 
 
 
-/* 입력한 색상으로 배경색 변경하기 ------------------------------- !!!!!!!!!!!!!! <Test> !!!!!!!!!!!!!!!!!!*/ 
+/* 입력한 색상으로 배경색 변경하기 ------------------------------- !!!!!!!!!!!!!! <Test!! 시험!!!> !!!!!!!!!!!!!!!!!!*/ 
 
 const box3 = document.querySelector("#box3");
 const input3 = document.querySelector("#input3");

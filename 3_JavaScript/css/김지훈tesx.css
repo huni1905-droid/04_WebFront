@@ -1,0 +1,33 @@
+*{
+  box-sizing: border-box;
+}
+
+#inputTable{
+  display: flex;
+}
+
+#inputTable th{
+  text-align: center;
+  height: 50px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+body div:last-of-type{
+  display: flex;
+  justify-content: center;
+}
+
+#applyBtn{
+   justify-content: center;
+} 
+
+
+#resultBox{
+  border: 1px solid black;
+
+}
+

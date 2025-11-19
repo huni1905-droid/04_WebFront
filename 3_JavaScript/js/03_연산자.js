@@ -23,7 +23,7 @@ function plusFn(){
   const value2 = number2.value;
 
   console.log(value1, value2);
-  // input 창에 2 수를 입력하고 콘솔창과 연결된 + 버튼 누르면 콘솔창에 나온다
+  // input 창에 두 수를 입력하고 콘솔창과 연결된 + 버튼 누르면 콘솔창에 나온다
 
   console.log(value1 + value2);
   // -> input 요소에 작성된 값은 무조건 문자열(string) 형태라서

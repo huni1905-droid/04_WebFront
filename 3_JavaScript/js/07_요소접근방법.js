@@ -93,7 +93,7 @@ function cssTest(){
   const div2 = document.querySelector("[target-div='css-div'] > div:last-child");
   // 첫번째 자식이 아니면 div:last-child 등 써줘야 한다.
 
-  div2.innerText = "첫번쨰 요소가 아니면 querySelector() 특징 활용 못함"; 
+  div2.innerText = "첫번째 요소가 아니면 querySelector() 특징 활용 못함"; 
 
 
 
